@@ -1,8 +1,8 @@
 import React from 'react'
-import Button from '@material-ui/core/Button'
 import { Link, Route } from 'react-router-dom'
 import styled from 'styled-components'
-import { withTheme } from '@material-ui/styles';
+import { withTheme } from '@material-ui/styles'
+import { Button } from 'antd'
 
 const NavButton = (props: {
   label: string,
@@ -25,7 +25,6 @@ const NavButton = (props: {
       children={({ match, history }) => {
         return (
           <StyledButton onClick={() => history.push(to)} className={match ? "active" : ""}>
-            {/* <Link to={to}>{label}</Link> */}
             {label}
           </StyledButton>
         )
